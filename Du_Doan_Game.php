@@ -37,6 +37,44 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {  // Khi người chơi nhấn nút 
 <head>
     <meta charset="UTF-8">
     <title>Game Dự Đoán</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color:rgb(217, 215, 215);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        .options label {
+            display: block;
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        button {
+            background:rgb(19, 177, 56);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+        button:hover {
+            background:rgb(13, 236, 61);
+        }
+        .history {
+            margin-top: 18px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
     <h2>Game Dự Đoán</h2>
